@@ -21,9 +21,9 @@
             color: #333;
             font-family: 'Circular Spotify Text', sans-serif;
             text-align: center;
-			display: flex;
-			flex-direction: column;
-			min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
@@ -65,121 +65,60 @@
             font-weight: 200;
             text-align: center;
             clear: both;
-			margin-top: auto;
+            margin-top: auto;
         }
 
-        .latest-releases {
-            margin-top: 50px;
+        .textbox {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0.5px 2px 2px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            transform: scale(1);
+            transform-origin: center;
         }
 
-        .latest-releases h2 {
+        .textbox h2,
+        .textbox h3,
+        .textbox p {
+            margin: 0;
+            margin-top: 20px;
+        }
+
+        .textbox h2 {
             font-size: 28px;
+        }
+
+        .textbox h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .textbox p {
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.6;
             margin-bottom: 20px;
         }
-
-        .release-list {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            font-weight: bold;
-            flex-wrap: wrap;
-        }
-
-        .release-item {
-            margin: 15px;
-        }
-
-        .release-item iframe {
-            border-radius: 12px;
-        }
-
-        .release-item p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
-
-.about-section .textbox {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 30px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0.5px 2px 2px rgba(0, 0, 0, 0.1);
-}
-
-.about-section h2,
-.about-section h3 {
-    margin-top: 20px;
-}
-
-.about-section h2 {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.about-section h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.about-section p {
-    text-align: justify;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.about-section a {
-    font-family: "Circular Spotify Text", sans-serif;
-    font-size: 18px;
-    text-decoration: none;
-    color: inherit;
-}
-
-.about-section a:hover {
-    color: #003122;
-}
-
-.about-section span {
-    color: #00C979;
-    font-weight: bold;
-}
-
-.textbox {
-    background-color: #ffffff;
-    transform: scale(1);
-    transform-origin: center;
-}
-
-.textbox h2,
-.textbox h3,
-.textbox p,
-.textbox a {
-    margin: 0;
-}
-	
     </style>
 </head>
 
 <body>
-
     <header>
         <h1>TrapLegion - Productora Discográfica</h1>
     </header>
 
     <nav>
         <a href="index.html">Inicio</a>
-		<a href="latestreleases.html">Últimos Lanzamientos</a>
+        <a href="latestreleases.html">Últimos Lanzamientos</a>
         <a href="artists.html">Nuestros Artistas</a>
         <a href="contact.html">Contacto</a>
-		<a href="knowus.html">Quiénes Somos</a>
+        <a href="knowus.html">Quiénes Somos</a>
     </nav>
 
-<div class="content">
-    <div class="about-section">
+    <div class="content">
         <div class="textbox">
             <h2>El misterio detrás del REMAKE de PIK por SKB</h2>
             <p>El mundo de la música electrónica se encuentra en vilo ante el anuncio del remake de la famosa canción "PIK" por parte del reconocido productor musical SKB. Este proyecto ha capturado la atención de fans, críticos y expertos por igual, generando una anticipación sin precedentes.</p>
@@ -214,13 +153,10 @@
             <p>En conclusión, el remake de "PIK" por SKB es un proyecto que ha generado una enorme expectación y emoción en la comunidad musical. Con su enfoque meticuloso, colaboraciones especiales, estrategia de marketing y gira mundial, SKB está preparando el terreno para un lanzamiento que promete ser recordado por mucho tiempo. Solo queda esperar y ver si el remake cumple con las expectativas y se convierte en el próximo gran éxito de la música electrónica.</p>
         </div>
     </div>
-</div>
-
 
     <footer>
-        <h2>TrapLegion 2019 - 2024 © Todos Los Derechos Reservados</h2>
+        Derechos Reservados © 2024 TrapLegion - Productora Discográfica
     </footer>
-
 </body>
 
 </html>
