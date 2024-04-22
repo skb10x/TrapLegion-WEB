@@ -14,8 +14,7 @@
             font-style: normal;
         }
 
-        /* Estilos para desktop */
-        body.desktop {
+        body {
             margin: 0;
             padding: 0;
             background-color: #f7f7f7;
@@ -27,57 +26,57 @@
             min-height: 100vh;
         }
 
-        header, .mobile header {
+        header {
             background-color: #00C979;
             color: #fff;
             padding: 20px 0;
         }
 
-        header h1, .mobile header h1 {
+        header h1 {
             font-size: 36px;
             margin: 0;
         }
 
-        nav, .mobile nav {
+        nav {
             background-color: #018A54;
             color: #fff;
             padding: 10px 0;
         }
 
-        nav a, .mobile nav a {
+        nav a {
             margin: 0 15px;
             color: #fff;
             text-decoration: none;
             font-size: 18px;
         }
 
-        nav a.active, .mobile nav a.active {
+        nav a.active {
             color: #003122;
         }
 
-        nav a:hover, .mobile nav a:hover {
+        nav a:hover {
             color: #003122;
         }
 
-        footer, .mobile footer {
+        footer {
             background-color: #333;
             color: #fff;
             padding: 20px 0;
-            position: relative;
+            position: absolute;
             bottom: 0;
             width: 100%;
         }
 
-        .latest-releases, .mobile .latest-releases {
+        .latest-releases {
             margin-top: 50px;
         }
 
-        .latest-releases h2, .mobile .latest-releases h2 {
+        .latest-releases h2 {
             font-size: 28px;
             margin-bottom: 20px;
         }
 
-        .release-list, .mobile .release-list {
+        .release-list {
             list-style-type: none;
             padding: 0;
             display: flex;
@@ -87,21 +86,22 @@
             flex-wrap: wrap;
         }
 
-        .release-item, .mobile .release-item {
+        .release-item {
             margin: 15px;
         }
 
-        .release-item iframe, .mobile .release-item iframe {
+        .release-item iframe {
             border-radius: 12px;
         }
 
-        .release-item p, .mobile .release-item p {
+        .release-item p {
             font-size: 18px;
             margin-top: 10px;
         }
 
-        .about-section .text-box, .mobile .about-section .text-box {
+        .about-section .text-box {
             margin: -350px 0;
+            padding: 10px; /* Padding más pequeño */
             border: 1px solid #ddd;
             border-radius: 20px;
             box-shadow: 0.5px 2px 2px rgba(0, 0, 0, 0.1);
@@ -109,13 +109,13 @@
             margin-top: 20px;
         }
 
-        .about-section h2, .mobile .about-section h2 {
+        .about-section h2 {
             font-size: 20px;
             text-align: center;
             margin-bottom: 10px;
         }
 
-        .about-section p, .mobile .about-section p {
+        .about-section p {
             text-align: justify;
             font-size: 18px;
             margin-left: 700px;
@@ -124,7 +124,7 @@
             margin-bottom: 10px;
         }
 
-        .about-section .textbox a, .mobile .about-section .textbox a {
+        .about-section .textbox a {
             font-family: "Circular Spotify Text", sans-serif;
             font-size: 18px;
             text-decoration: none;
@@ -132,7 +132,7 @@
             font-weight: 900;
         }
 
-        .about-section .textbox a:hover, .mobile .about-section .textbox a:hover {
+        .about-section .textbox a:hover {
             color: #003122;
             text-decoration: none;
         }
@@ -143,7 +143,7 @@
     </style>
 </head>
 
-<body class="desktop">
+<body>
 
     <header>
         <h1>TrapLegion - Productora Discográfica</h1>
@@ -159,7 +159,7 @@
 
     <div class="content">
         <div class="about-section">
-            <div class="textbox">
+            <div class="text-box">
                 <h2>Rumores acerca de PIK REMAKE</h2>
                 <p>Recientemente, SKB habló y dijo que está trabajando en el REMAKE de una de sus canciones. Muchos dicen que es PIK. Si querés saber más, hacé clic abajo</p> 
                 <a href="skbpikinfo.html">VER MÁS</a>
@@ -173,7 +173,7 @@
     
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const links = document.querySelectorAll('.about-section .textbox a, .mobile .about-section .textbox a');
+            const links = document.querySelectorAll('.about-section .textbox a');
             
             links.forEach(link => {
                 link.addEventListener('click', function(event) {
@@ -181,11 +181,6 @@
                     location.href = this.href; // Navegar a la URL del enlace
                 });
             });
-            
-            // Detectar dispositivo móvil y añadir clase 'mobile'
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                document.body.classList.add('mobile');
-            }
         });
     </script>
 
