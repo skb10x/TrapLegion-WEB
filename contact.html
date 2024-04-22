@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - TrapLegion</title>
+    <style>
+        /* Font face para Circular Spotify Text */
+        @font-face {
+            font-family: 'Circular Spotify Text';
+            src: url('https://raw.githubusercontent.com/skb10x/circularspotifyfonttotl/main/CircularSpotifyText-Book.otf') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            font-family: 'Circular Spotify Text', sans-serif;
+            text-align: center;
+        }
+
+        header {
+            background-color: #00C979;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #018A54;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a.active {
+            color: #003122;
+        }
+
+        nav a:hover {
+            color: #003122;
+        }
+
+        form {
+            margin-top: 50px;
+        }
+
+        form label,
+        form input,
+        form textarea,
+        form button {
+            display: block;
+            margin: 10px 0;
+            width: 80%;
+            max-width: 400px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        form button {
+            background-color: #018A54;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #00C979;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-links img {
+            margin: 0 10px;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>TrapLegion - Contacto</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+		<a href="latestreleases.html">Últimos Lanzamientos</a>
+        <a href="artists.html">Nuestros Artistas</a>
+        <a href="contact.html" class="active">Contacto</a>
+		<a href="knowus.html">Quiénes Somos</a>
+    </nav>
+
+    <form action="https://formsubmit.co/Your_Form_ID_Here" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <footer>
+        <h2> TrapLegion 2019 - 2024 © Todos Los Derechos Reservados </h2>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrapLegion - Productora Discográfica</title>
+    <style>
+        /* Font face para Circular Spotify Text */
+        @font-face {
+            font-family: 'Circular Spotify Text';
+            src: url('https://raw.githubusercontent.com/skb10x/circularspotifyfonttotl/main/CircularSpotifyText-Book.otf') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            font-family: 'Circular Spotify Text', sans-serif;
+            text-align: center;
+        }
+
+        header {
+            background-color: #00C979;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #018A54;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a.active {
+            color: #003122;
+        }
+
+        nav a:hover {
+            color: #03563D;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+		
+        .latest-releases {
+            margin-top: 50px;
+        }
+
+        .latest-releases h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .release-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+            flex-wrap: wrap;
+        }
+
+        .release-item {
+            margin: 15px;
+        }
+
+        .release-item iframe {
+            border-radius: 12px;
+        }
+
+        .release-item p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+		        .content {
+            flex: 1;
+		}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>TrapLegion - Productora Discográfica</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+		<a href="latestreleases.html"  class="active">Últimos Lanzamientos</a>
+        <a href="artists.html">Nuestros Artistas</a>
+        <a href="contact.html">Contacto</a>
+		<a href="knowus.html">Quiénes Somos</a>
+    </nav>
+
+    <div class="latest-releases" id="ultimos-lanzamientos">
+        <h2>Últimos Lanzamientos</h2>
+
+        <div class="artists-list">
+            <p>OficialSKB</p>
+            <ul class="release-list">
+                <li class="release-item">
+                    <p>Megabone - Single</p>
+                    <p>Lanzamiento: 2019</p>
+                    <iframe src="https://open.spotify.com/embed/album/1cgSGIttII4noBIwHcNhwu?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
+                <li class="release-item">
+                    <p>Como Tú Lo Mueves - Single</p>
+                    <p>Lanzamiento: 17 de Junio de 2021</p>
+                    <iframe src="https://open.spotify.com/embed/album/6bQ5OnbeA8Yf3Q2KSiDqUL?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
+                <li class="release-item">
+                    <p>Bebé - Álbum</p>
+                    <p>Lanzamiento: 24 de Diciembre de 2021</p>
+                    <iframe src="https://open.spotify.com/embed/album/4PqYl8438SBolJLQoPG6xw?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
+                <li class="release-item">
+                    <p>Euphoria - Single</p>
+                    <p>Lanzamiento: 13 de Enero de 2023</p>
+                    <iframe src="https://open.spotify.com/embed/album/0G8FVeIR8btl73XUrSc9Sz?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <h2>TrapLegion 2019 - 2024 © Todos Los Derechos Reservados</h2>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Artistas - TrapLegion</title>
+    <style>
+        /* Font face para Circular Spotify Text */
+        @font-face {
+            font-family: 'Circular Spotify Text';
+            src: url('https://raw.githubusercontent.com/skb10x/circularspotifyfonttotl/main/CircularSpotifyText-Book.otf') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            font-family: 'Circular Spotify Text', sans-serif;
+            text-align: center;
+        }
+
+        header {
+            background-color: #00C979;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #018A54;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a.active {
+            color: #003122;
+        }
+
+        nav a:hover {
+            color: #003122;
+        }
+		
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            font-weight: 200;
+            text-align: center;
+            clear: both;
+			margin-top: auto;
+        }
+
+        .social-links img {
+            margin: 0 10px;
+            width: 30px;
+            height: 30px;
+        }
+		
+		.latest-releases {
+           margin-top: 50px;
+        }
+
+        .latest-releases h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .release-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+            flex-wrap: wrap;
+        }
+
+        .release-item {
+            margin: 15px;
+        }
+
+        .release-item iframe {
+            border-radius: 12px;
+        }
+
+        .release-item p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+		        .content {
+            flex: 1;
+		}
+
+        .artist-section {
+            margin-top: 50px;
+        }
+
+        .artist-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .artist-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+            flex-wrap: wrap;
+        }
+
+        .artist-item {
+            margin: 15px;
+        }
+
+        .artist-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .artist-item p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Aplicando el estilo del iframe para el artista */
+        .artist-item iframe {
+            width: 250px; /* Ancho cuadrado */
+            height: 250px; /* Alto cuadrado */
+            max-width: 100%;
+            max-height: 100%;
+            frameborder: 0;
+            allowfullscreen: true;
+            allow: autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture;
+            loading: lazy;
+        }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-weight: 200;
+    text-align: center;
+    clear: both;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>TrapLegion - Nuestros Artistas</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+		<a href="latestreleases.html">Últimos Lanzamientos</a>
+        <a href="artists.html" class="active">Nuestros Artistas</a>
+        <a href="contact.html">Contacto</a>
+		<a href="knowus.html">Quiénes Somos</a>
+    </nav>
+
+<div class="artist-section">
+    <h2>SKB (OficialSKB)</h2>
+    <div class="social-links">
+        <a href="https://www.youtube.com/@OficialSKB" target="_blank">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/174/174883.svg" alt="YouTube">
+        </a>
+        <a href="https://www.instagram.com/OficialSKB" target="_blank">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111463.svg" alt="Instagram">
+        </a>
+        <a href="https://open.spotify.com/artist/0zkWKjecP6nh4Hy8ui2DVa" target="_blank">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/49/49097.svg" alt="Spotify">
+        </a>
+    </div>
+    <iframe src="https://open.spotify.com/embed/artist/0zkWKjecP6nh4Hy8ui2DVa?utm_source=generator" width="30%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+
+	
+	    <div class="latest-releases" id="ultimos-lanzamientos">
+        <h2>Últimos Lanzamientos</h2>
+
+            <ul class="release-list">
+                <li class="release-item">
+                    <p>Megabone - Single</p>
+                    <p>Lanzamiento: 2019</p>
+                    <iframe src="https://open.spotify.com/embed/album/1cgSGIttII4noBIwHcNhwu?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
+                <li class="release-item">
+                    <p>Como Tú Lo Mueves - Single</p>
+                    <p>Lanzamiento: 17 de Junio de 2021</p>
+                    <iframe src="https://open.spotify.com/embed/album/6bQ5OnbeA8Yf3Q2KSiDqUL?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
+                <li class="release-item">
+                    <p>Bebé - Álbum</p>
+                    <p>Lanzamiento: 24 de Diciembre de 2021</p>
+                    <iframe src="https://open.spotify.com/embed/album/4PqYl8438SBolJLQoPG6xw?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
+                <li class="release-item">
+                    <p>Euphoria - Single</p>
+                    <p>Lanzamiento: 13 de Enero de 2023</p>
+                    <iframe src="https://open.spotify.com/embed/album/0G8FVeIR8btl73XUrSc9Sz?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
+            </ul>
+        </div>
+
+    <footer>
+        <h2> TrapLegion 2019 - 2024 © Todos Los Derechos Reservados </h2>
+    </footer>
+</body>
+</html>
