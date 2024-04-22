@@ -1,11 +1,19 @@
 RewriteEngine On
+RewriteBase /
+
+# Quitar la extensión .html de las URLs
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
 
 # Redirigir de la URL con /index.html al dominio sin /index
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
 RewriteRule ^index\.html$ http://traplegion.solargentinotv.com.ar/ [R=301,L]
+
+# Redirigir de la URL con /index al dominio sin /index
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\ HTTP/
+RewriteRule ^index$ http://traplegion.solargentinotv.com.ar/ [R=301,L]
 
 # Redirigir de la URL con .html al nombre sin .html
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP/
