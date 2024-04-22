@@ -14,7 +14,7 @@
             font-style: normal;
         }
 
-        body {
+        body, html {
             margin: 0;
             padding: 0;
             background-color: #f7f7f7;
@@ -63,13 +63,12 @@
             color: #fff;
             padding: 20px 0;
             width: 100%;
-            bottom: 0;
-            position: sticky; /* Establece el posicionamiento pegajoso */
             z-index: 100; /* Asegura que el footer esté sobre el contenido */
         }
 
         .latest-releases {
             margin-top: 50px;
+            flex: 1;
         }
 
         .latest-releases h2 {
@@ -98,10 +97,6 @@
         .release-item p {
             font-size: 18px;
             margin-top: 10px;
-        }
-
-        .content {
-            flex: 1;
         }
     </style>
 </head>
