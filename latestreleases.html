@@ -21,6 +21,9 @@
             color: #333;
             font-family: 'Circular Spotify Text', sans-serif;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
@@ -63,7 +66,7 @@
             bottom: 0;
             width: 100%;
         }
-		
+
         .latest-releases {
             margin-top: 50px;
         }
@@ -95,9 +98,44 @@
             font-size: 18px;
             margin-top: 10px;
         }
-		        .content {
+
+        .content {
             flex: 1;
-		}
+        }
+
+        /* Estilos para dispositivos móviles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            .latest-releases h2 {
+                font-size: 24px;
+            }
+
+            .release-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .release-item {
+                margin: 10px 0;
+            }
+
+            .release-item iframe {
+                width: 100%;
+                height: auto;
+            }
+        }
     </style>
 </head>
 
@@ -109,10 +147,10 @@
 
     <nav>
         <a href="index.html">Inicio</a>
-		<a href="latestreleases.html"  class="active">Últimos Lanzamientos</a>
+        <a href="latestreleases.html" class="active">Últimos Lanzamientos</a>
         <a href="artists.html">Nuestros Artistas</a>
         <a href="contact.html">Contacto</a>
-		<a href="knowus.html">Quiénes Somos</a>
+        <a href="knowus.html">Quiénes Somos</a>
     </nav>
 
     <div class="latest-releases" id="ultimos-lanzamientos">
