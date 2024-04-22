@@ -62,7 +62,7 @@
             background-color: #333;
             color: #fff;
             padding: 20px 0;
-            position: absolute;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
@@ -168,66 +168,29 @@
             flex: 1;
 		}
 	
-	/* Media Query para dispositivos móviles */
+/* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
-    
-    .about-section {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 
-    .textbox {
-        padding: 15px;
-        transform: scale(1); /* Restablecer el escalamiento */
-    }
+body {
+    flex-direction: column;
+}
 
-    .about-section p {
-        margin-left: 0;
-        margin-right: 0;
-    }
+.content {
+    flex: 1;
+}
 
-    footer {
-        padding: 15px 0;
-    }
+.about-section {
+    transform: scale(1); 
+    padding: 0 20px;
+    margin-top: 20px;
+}
 
-    header h1 {
-        font-size: 28px;
-    }
+.textbox {
+    padding: 15px;
+    transform: scale(1);
+    margin-left: 0;
+    margin-right: 0
 
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 10px 0;
-        font-size: 16px;
-    }
-
-    .latest-releases h2 {
-        font-size: 24px;
-    }
-
-    .release-item {
-        margin: 10px;
-    }
-
-    .release-item iframe {
-        width: 100%;
-    }
-
-    .release-item p {
-        font-size: 16px;
-    }
-
-    .textbox h2 {
-        font-size: 18px;
-    }
-
-    .textbox p,
-    .textbox a {
-        font-size: 16px;
-    }
 }	
     </style>
 </head>
