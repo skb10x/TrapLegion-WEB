@@ -260,35 +260,6 @@
         });
     </script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const themeToggle = document.getElementById('theme-toggle');
-        
-        // Cargar el tema actual o el tema predeterminado
-        if (localStorage.getItem('theme') === 'dark') {
-            loadDarkMode();
-        }
-
-        // Agregar evento al botón
-        themeToggle.addEventListener('click', function() {
-            if (document.body.classList.contains('dark')) {
-                // Cambiar a tema claro
-                document.body.classList.remove('dark');
-                localStorage.setItem('theme', 'light');
-            } else {
-                // Cambiar a modo oscuro
-                loadDarkMode();
-                localStorage.setItem('theme', 'dark');
-            }
-        });
-        
-        function loadDarkMode() {
-            // Cambiar a modo oscuro
-            document.body.classList.add('dark');
-        }
-    });
-</script>
-
 </body>
 
 </html>
