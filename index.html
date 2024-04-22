@@ -62,7 +62,7 @@
             background-color: #333;
             color: #fff;
             padding: 20px 0;
-            position: sticky;
+            position: absolute;
             bottom: 0;
             width: 100%;
         }
@@ -100,27 +100,64 @@
         }
 
         .about-section {
-            padding-left: 20px;  /* Ajuste para móviles */
-            padding-right: 20px; /* Ajuste para móviles */
+            padding-left: 700px;
+            padding-right: 700px;
+            transform: scale(0.8);
+            transform-origin: center;
+            position: relative;
+            display: inline-block;
         }
 
         .textbox {
-            padding: 20px; /* Padding interno para el contenido */
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Box Shadow */
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 25px;
+            transform: scale(1.4);
+            transform-origin: center;
+        }
+
+        .textbox h2,
+        .textbox p,
+        .textbox a {
+            margin: 0;
         }
 
         .about-section p {
-            margin-left: 20px;  /* Ajuste para móviles */
-            margin-right: 20px; /* Ajuste para móviles */
+            text-align: justify;
+            font-size: 18px;
+            margin-left: 700px;
+            margin-right: 700px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .about-section .textbox a {
+            font-family: "Circular Spotify Text", sans-serif;
+            font-size: 18px;
+            text-decoration: none;
+            color: #00C979;
+            font-weight: 900;
+        }
+
+        .about-section .textbox a:hover {
+            color: #003122;
+            text-decoration: none;
+        }
+
+        .mobile .about-section {
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
         .mobile .textbox {
-            padding: 15px; /* Ajuste para móviles */
+            padding: 15px;
         }
 
         .mobile .about-section p {
-            margin-left: 10px;  /* Ajuste para móviles */
-            margin-right: 10px; /* Ajuste para móviles */
+            margin-left: 20px;
+            margin-right: 20px;
         }
     </style>
 </head>
