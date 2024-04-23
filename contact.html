@@ -22,6 +22,9 @@
             color: #000;
             font-family: 'Circular Spotify Text', sans-serif;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
@@ -62,6 +65,7 @@
             padding: 20px;
             border-radius: 10px;
             background-color: #fff;
+            flex: 1;
         }
 
         form label,
@@ -92,8 +96,6 @@
             background-color: #222;
             color: #fff;
             padding: 20px 0;
-            position: absolute;
-            bottom: 0;
             width: 100%;
         }
 
@@ -119,32 +121,6 @@
         <a href="knowus">Quiénes Somos</a>
     </nav>
 
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-
-        $to = "traplegion@solargentinotv.com.ar";
-        $subject = "Nuevo mensaje de contacto de TrapLegion";
-        $headers = "From: $email\r\n";
-        $headers .= "Reply-To: $email\r\n";
-        $headers .= "Content-type: text/html\r\n";
-
-        $body = "<h2>Nuevo mensaje de contacto de TrapLegion</h2>";
-        $body .= "<p><strong>Nombre:</strong> $name</p>";
-        $body .= "<p><strong>Email:</strong> $email</p>";
-        $body .= "<p><strong>Mensaje:</strong></p>";
-        $body .= "<p>$message</p>";
-
-        if (mail($to, $subject, $body, $headers)) {
-            echo "<p>Mensaje enviado correctamente.</p>";
-        } else {
-            echo "<p>Hubo un error al enviar el mensaje.</p>";
-        }
-    }
-    ?>
-
     <form action="" method="POST">
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" required>
@@ -157,6 +133,20 @@
 
         <button type="submit">Enviar</button>
     </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+
+        $to = 'traplegion@solargentinotv.com.ar';
+        $subject = 'Nuevo mensaje desde el formulario de contacto';
+        $headers = "From: $email";
+
+        mail($to, $subject, $message, $headers);
+    }
+    ?>
 
     <footer>
         <h2> TrapLegion 2019 - 2024 © Todos Los Derechos Reservados </h2>
