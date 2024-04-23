@@ -553,6 +553,7 @@ ol, ul {
 	text-shadow:0 1px 0 rgba(0, 0, 0, 0.25);
 	font-family: 'Circular Spotify Text', sans-serif;
 	padding-bottom:-60px;
+	border-radius: 8px;
 	}
 	
 .zf-submitColor:hover{
