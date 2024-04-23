@@ -55,7 +55,7 @@
         nav a:hover {
             color: #003122;
         }
-		
+
         footer {
             background-color: #222;
             color: #fff;
@@ -63,7 +63,7 @@
             font-weight: 200;
             text-align: center;
             clear: both;
-			margin-top: auto;
+            margin-top: auto;
         }
 
         .social-links img {
@@ -71,9 +71,9 @@
             width: 30px;
             height: 30px;
         }
-		
-		.latest-releases {
-           margin-top: 50px;
+
+        .latest-releases {
+            margin-top: 50px;
         }
 
         .latest-releases h2 {
@@ -103,9 +103,6 @@
             font-size: 18px;
             margin-top: 10px;
         }
-		        .content {
-            flex: 1;
-		}
 
         .artist-section {
             margin-top: 50px;
@@ -136,15 +133,9 @@
             object-fit: cover;
         }
 
-        .artist-item p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
-
-        /* Aplicando el estilo del iframe para el artista */
         .artist-item iframe {
-            width: 250px; /* Ancho cuadrado */
-            height: 250px; /* Alto cuadrado */
+            width: 250px;
+            height: 250px;
             max-width: 100%;
             max-height: 100%;
             frameborder: 0;
@@ -153,27 +144,36 @@
             loading: lazy;
         }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+        /* Cambio de color para la barra de progreso */
+        ::webkit-progress-bar {
+            background-color: #fff; /* Color de fondo de la barra de progreso */
+        }
 
-.content {
-    flex: 1;
-}
+        ::webkit-progress-value {
+            background-color: #00C979; /* Color de la barra de progreso */
+        }
 
-footer {
-    background-color: #222;
-    color: #fff;
-    padding: 20px 0;
-    font-weight: 200;
-    text-align: center;
-    clear: both;
-    margin-top: auto;
-    position: relative;
-    bottom: 0;
-}
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            font-weight: 200;
+            text-align: center;
+            clear: both;
+            margin-top: auto;
+            position: relative;
+            bottom: 0;
+        }
     </style>
 </head>
 
@@ -185,58 +185,65 @@ footer {
 
     <nav>
         <a href="/">Inicio</a>
-		<a href="latestreleases">Últimos Lanzamientos</a>
+        <a href="latestreleases">Últimos Lanzamientos</a>
         <a href="artists" class="active">Nuestros Artistas</a>
         <a href="contact">Contacto</a>
-		<a href="knowus">Quiénes Somos</a>
+        <a href="knowus">Quiénes Somos</a>
     </nav>
 
-<div class="artist-section">
-    <h2>SKB (OficialSKB)</h2>
-    <div class="social-links">
-        <a href="https://www.youtube.com/@OficialSKB" target="_blank">
-            <img src="https://www.flaticon.com/svg/static/icons/svg/174/174883.svg" alt="YouTube">
-        </a>
-        <a href="https://www.instagram.com/OficialSKB" target="_blank">
-            <img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111463.svg" alt="Instagram">
-        </a>
-        <a href="https://open.spotify.com/artist/0zkWKjecP6nh4Hy8ui2DVa" target="_blank">
-            <img src="https://www.flaticon.com/svg/static/icons/svg/49/49097.svg" alt="Spotify">
-        </a>
-    </div>
-    <iframe src="https://open.spotify.com/embed/artist/0zkWKjecP6nh4Hy8ui2DVa?utm_source=generator" width="30%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
-
-	
-	    <div class="latest-releases" id="ultimos-lanzamientos">
-        <h2>Últimos Lanzamientos</h2>
-
-            <ul class="release-list">
-                <li class="release-item">
-                    <p>Megabone - Single</p>
-                    <p>Lanzamiento: 2019</p>
-                    <iframe src="https://open.spotify.com/embed/album/1cgSGIttII4noBIwHcNhwu?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </li>
-                <li class="release-item">
-                    <p>Como Tú Lo Mueves - Single</p>
-                    <p>Lanzamiento: 17 de Junio de 2021</p>
-                    <iframe src="https://open.spotify.com/embed/album/6bQ5OnbeA8Yf3Q2KSiDqUL?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </li>
-                <li class="release-item">
-                    <p>Bebé - Álbum</p>
-                    <p>Lanzamiento: 24 de Diciembre de 2021</p>
-                    <iframe src="https://open.spotify.com/embed/album/4PqYl8438SBolJLQoPG6xw?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </li>
-                <li class="release-item">
-                    <p>Euphoria - Single</p>
-                    <p>Lanzamiento: 13 de Enero de 2023</p>
-                    <iframe src="https://open.spotify.com/embed/album/0G8FVeIR8btl73XUrSc9Sz?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </li>
-            </ul>
+    <div class="artist-section">
+        <h2>SKB (OficialSKB)</h2>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@OficialSKB" target="_blank">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/174/174883.svg" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/OficialSKB" target="_blank">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111463.svg" alt="Instagram">
+            </a>
+            <a href="https://open.spotify.com/artist/0zkWKjecP6nh4Hy8ui2DVa" target="_blank">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/49/49097.svg" alt="Spotify">
+            </a>
         </div>
+        <iframe src="https://open.spotify.com/embed/artist/0zkWKjecP6nh4Hy8ui2DVa?utm_source=generator" width="30%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div class="latest-releases" id="ultimos-lanzamientos">
+        <h2>Últimos Lanzamientos</h2>
+        <ul class="release-list">
+            <!-- Megabone -->
+            <li class="release-item">
+                <img src="https://i.scdn.co/image/ab67616d00001e02f629cd3f68b4757d0f628066" alt="Megabone" width="150">
+                <p>Megabone - Single</p>
+                <p>Lanzamiento: 2019</p>
+                <iframe src="https://open.spotify.com/embed/album/1cgSGIttII4noBIwHcNhwu?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </li>
+            <!-- Como Tú Lo Mueves -->
+            <li class="release-item">
+                <img src="https://i.scdn.co/image/ab67616d00001e0251607c6b2d21b9014fdaac7f" alt="Como Tú Lo Mueves" width="150">
+                <p>Como Tú Lo Mueves - Single</p>
+                <p>Lanzamiento: 17 de Junio de 2021</p>
+                <iframe src="https://open.spotify.com/embed/album/6bQ5OnbeA8Yf3Q2KSiDqUL?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </li>
+            <!-- Bebé -->
+            <li class="release-item">
+                <img src="https://i.scdn.co/image/ab67616d00001e024e1d4ef96603bc77d04cd226" alt="Bebé" width="150">
+                <p>Bebé - Álbum</p>
+                <p>Lanzamiento: 24 de Diciembre de 2021</p>
+                <iframe src="https://open.spotify.com/embed/album/4PqYl8438SBolJLQoPG6xw?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </li>
+            <!-- Euphoria -->
+            <li class="release-item">
+                <img src="https://i.scdn.co/image/ab67616d00001e020dd596c32a56830f4ae4d016" alt="Euphoria" width="150">
+                <p>Euphoria - Single</p>
+                <p>Lanzamiento: 13 de Enero de 2023</p>
+                <iframe src="https://open.spotify.com/embed/album/0G8FVeIR8btl73XUrSc9Sz?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </li>
+        </ul>
+    </div>
 
     <footer>
         <h2> TrapLegion 2019 - 2024 © Todos Los Derechos Reservados </h2>
     </footer>
 </body>
+
 </html>
