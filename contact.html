@@ -65,13 +65,94 @@
             margin-top: 50px;
         }
 
+        .content {
+            flex: 1;
+        }
+
         footer {
             background-color: #222;
             color: #fff;
             padding: 20px 0;
-            position: sticky;
-            bottom: 0;
+            font-weight: 200;
+            text-align: center;
+            clear: both;
+			margin-top: auto;
+        }
+
+        /* Estilos del formulario */
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content .zf-templateWidth form h2 {
+            color: #00C979;
+            margin-top: 0;
+            font-weight: bold;
+            text-align: center;
+            font-size: 32px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input {
             width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #00C979;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: "Circular Spotify Text", sans-serif;
+            display: block;
+            margin: 10px auto 0;
+            font-style: normal;
+            line-height: 1; /* Ajuste del line-height para centrar verticalmente el texto */
+        }
+		
+		button.custom-btn::before {
+            content: 'Enviar'; /* El texto del botón */
+			display: block;
+			position: relative;
+			top: 2px; /* Ajusta este valor para subir o bajar el texto */
+        }
+
+        button:hover {
+            background-color: #003122;
+        }
+
+        em {
+            color: #00C979;
+            font-style: normal;
         }
     </style>
 </head>
@@ -89,10 +170,50 @@
         <a href="knowus">Quiénes Somos</a>
     </nav>
 
-    <iframe src="https://traplegion.solargentinotv.com.ar/formulariocontacto"></iframe>
+    <!-- Formulario de contacto -->
+    <div class="content">
+        <div class="zf-templateWidth">
+            <form action="https://forms.zohopublic.com/solargentinotv/form/TrapLegionContacto/formperma/eIT0C_ePE4F2adP7wXUsaOuJ85_VBaIOHUfiZRIn3NU/htmlRecords/submit" method="POST" onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();' accept-charset='UTF-8' enctype='multipart/form-data' id='form'>
+
+                <input type="hidden" name="zf_referrer_name" value="">
+                <input type="hidden" name="zf_redirect_url" value="">
+                <input type="hidden" name="zc_gad" value="">
+
+                <h2> Formulario de contacto de TrapLegion </h2>
+				<p style="margin-top: -32px;">Completa los siguientes campos para ponerte en contacto con nosotros. ¡Estamos ansiosos por escuchar de ti!</p>
+
+                <!-- Nombre y Apellido -->
+                <label>Nombre y Apellido <em>*</em></label>
+                <div>
+                    <span> <input type="text" maxlength="255" name="Name_First" fieldType=7 placeholder="Nombre/s"/> </span>
+                    <span> <input type="text" maxlength="255" name="Name_Last" fieldType=7 placeholder="Apellido/s"/> </span>
+                </div>
+
+                <!-- Email -->
+                <label>Correo Electrónico <em>*</em></label>
+                <div>
+                    <span> <input fieldType=9  type="text" maxlength="255" name="Email" checktype="c5" value="" placeholder=""/> </span>
+                </div>
+
+                <!-- Mensaje -->
+                <label>Mensaje <em>*</em></label>
+                <div>
+                    <span> <textarea name="MultiLine" checktype="c1" maxlength="65535" placeholder=""></textarea> </span>
+                </div>
+
+                <!-- Fecha -->
+                <label>Fecha <em>*</em></label>
+                <div>
+                    <span> <input type="date" name="Date" checktype="c4" value="" maxlength="25"/> </span>
+                </div>
+
+                <button type="submit" class="custom-btn"></button>
+            </form>
+        </div>
+    </div>
 
     <footer>
-        <h2> TrapLegion © Todos Los Derechos Reservados </h2>
+        <h2 style="color: #fff;">TrapLegion © Todos Los Derechos Reservados</h2>
     </footer>
 
 </body>
