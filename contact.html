@@ -119,15 +119,22 @@
         <a href="knowus">Quiénes Somos</a>
     </nav>
 
-    <form action="contact.php" method="POST">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
+    <form
+      action="https://formspree.io/f/myyrllbb"
+      method="POST"
+      id="contactForm"
+    >
+        <label>
+            Tu Email:
+            <input type="email" name="email" required>
+        </label>
+        <label>
+            Tu Mensaje:
+            <textarea name="message" required></textarea>
+        </label>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" required></textarea>
+        <!-- Hidden field for redirection -->
+        <input type="hidden" name="_next" value="https//traplegion.solargentinotv.com.ar/mailconfirm">
 
         <button type="submit">Enviar</button>
     </form>
