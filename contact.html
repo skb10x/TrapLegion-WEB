@@ -22,9 +22,6 @@
             color: #000;
             font-family: 'Circular Spotify Text', sans-serif;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
 
         header {
@@ -65,7 +62,6 @@
             padding: 20px;
             border-radius: 10px;
             background-color: #fff;
-            flex: 1;
         }
 
         form label,
@@ -96,6 +92,8 @@
             background-color: #222;
             color: #fff;
             padding: 20px 0;
+            position: absolute;
+            bottom: 0;
             width: 100%;
         }
 
@@ -121,7 +119,7 @@
         <a href="knowus">Quiénes Somos</a>
     </nav>
 
-    <form action="" method="POST">
+    <form action="sendmail.php" method="POST">
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" required>
 
@@ -133,20 +131,6 @@
 
         <button type="submit">Enviar</button>
     </form>
-
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-
-        $to = 'traplegion@solargentinotv.com.ar';
-        $subject = 'Nuevo mensaje desde el formulario de contacto';
-        $headers = "From: $email";
-
-        mail($to, $subject, $message, $headers);
-    }
-    ?>
 
     <footer>
         <h2> TrapLegion 2019 - 2024 © Todos Los Derechos Reservados </h2>
