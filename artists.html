@@ -153,27 +153,27 @@
             loading: lazy;
         }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-        .content {
-            flex: 1;
-        }
+.content {
+    flex: 1;
+}
 
-        footer {
-            background-color: #222;
-            color: #fff;
-            padding: 20px 0;
-            font-weight: 200;
-            text-align: center;
-            clear: both;
-            margin-top: auto;
-            position: relative;
-            bottom: 0;
-        }
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    font-weight: 200;
+    text-align: center;
+    clear: both;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+}
     </style>
 </head>
 
@@ -204,74 +204,39 @@
             <img src="https://www.flaticon.com/svg/static/icons/svg/49/49097.svg" alt="Spotify">
         </a>
     </div>
-    <div class="aplayer" data-id="OficialSKB" data-server="github" data-type="playlist" data-order="list"></div>
+    <iframe src="https://open.spotify.com/embed/artist/0zkWKjecP6nh4Hy8ui2DVa?utm_source=generator" width="30%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
 	
-<div class="latest-releases" id="ultimos-lanzamientos">
-    <h2>Últimos Lanzamientos</h2>
+	    <div class="latest-releases" id="ultimos-lanzamientos">
+        <h2>Últimos Lanzamientos</h2>
 
-        <ul class="release-list">
-            <li class="release-item">
-                <p>Megabone - Single</p>
-                <p>Lanzamiento: 2019</p>
-                <div class="aplayer" data-id="Megabone 2019-2022" data-server="github" data-type="playlist" data-order="list"></div>
-            </li>
-            <li class="release-item">
-                <p>Como Tú Lo Mueves - Single</p>
-                <p>Lanzamiento: 17 de Junio de 2021</p>
-                <div class="aplayer" data-id="Como Tú Lo Mueves" data-server="github" data-type="single"></div>
-            </li>
-            <li class="release-item">
-                <p>Bebé - Álbum</p>
-                <p>Lanzamiento: 24 de Diciembre de 2021</p>
-                <div class="aplayer" data-id="Bebé" data-server="github" data-type="playlist" data-order="list"></div>
-            </li>
-            <li class="release-item">
-                <p>Euphoria - Single</p>
-                <p>Lanzamiento: 13 de Enero de 2023</p>
-                <div class="aplayer" data-id="Euphoria" data-server="github" data-type="single"></div>
-            </li>
-        </ul>
-</div>
+            <ul class="release-list">
+                <li class="release-item">
+                    <p>Megabone - Single</p>
+                    <p>Lanzamiento: 2019</p>
+                    <iframe src="https://open.spotify.com/embed/album/1cgSGIttII4noBIwHcNhwu?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
+                <li class="release-item">
+                    <p>Como Tú Lo Mueves - Single</p>
+                    <p>Lanzamiento: 17 de Junio de 2021</p>
+                    <iframe src="https://open.spotify.com/embed/album/6bQ5OnbeA8Yf3Q2KSiDqUL?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
+                <li class="release-item">
+                    <p>Bebé - Álbum</p>
+                    <p>Lanzamiento: 24 de Diciembre de 2021</p>
+                    <iframe src="https://open.spotify.com/embed/album/4PqYl8438SBolJLQoPG6xw?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
+                <li class="release-item">
+                    <p>Euphoria - Single</p>
+                    <p>Lanzamiento: 13 de Enero de 2023</p>
+                    <iframe src="https://open.spotify.com/embed/album/0G8FVeIR8btl73XUrSc9Sz?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
+            </ul>
+        </div>
 
-<footer>
-    <h2> TrapLegion 2019 - 2024 © Todos Los Derechos Reservados </h2>
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
-<script>
-    const ap = new APlayer({
-        container: document.querySelectorAll('.aplayer'),
-        listFolded: true,
-        audio: [
-            {
-                name: 'Megabone 2019-2022',
-                artist: 'SKB',
-                url: 'https://gitlab.com/solargentinotv/pruebaxd/-/raw/main/Megabone%202019-2022.mp3',
-                cover: 'https://i.scdn.co/image/ab67616d00001e02f629cd3f68b4757d0f628066'
-            },
-            {
-                name: 'Como Tú Lo Mueves',
-                artist: 'SKB',
-                url: 'https://gitlab.com/solargentinotv/pruebaxd/-/raw/main/Como%20Tu%20Lo%20Mueves%202021.mp3',
-                cover: 'https://i.scdn.co/image/ab67616d00001e0251607c6b2d21b9014fdaac7f'
-            },
-            {
-                name: 'Bebé',
-                artist: 'SKB',
-                url: 'https://gitlab.com/solargentinotv/pruebaxd/-/raw/main/Beb%C3%A9.mp3',
-                cover: 'https://i.scdn.co/image/ab67616d00001e024e1d4ef96603bc77d04cd226'
-            },
-            {
-                name: 'Euphoria',
-                artist: 'SKB',
-                url: 'https://gitlab.com/solargentinotv/pruebaxd/-/raw/main/Euphoria.mp3',
-                cover: 'https://i.scdn.co/image/ab67616d00001e020dd596c32a56830f4ae4d016'
-            }
-        ]
-    });
-</script>
-
+    <footer>
+        <h2> TrapLegion 2019 - 2024 © Todos Los Derechos Reservados </h2>
+    </footer>
 </body>
 </html>
