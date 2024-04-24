@@ -1,0 +1,164 @@
+/* Font face para Gilroy */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('https://cdn.jsdelivr.net/gh/skb10x/Gilroy-SATV@main/Gilroy.css');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #000;
+    font-family: 'Gilroy', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #00C979;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 800; /* Uso de Gilroy ExtraBold en el h1 */
+}
+
+nav {
+    background-color: #018A54;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a.active {
+    color: #003122;
+}
+
+nav a:hover {
+    color: #003122;
+}
+
+iframe {
+    flex: 1;
+    width: 100%;
+    border: none;
+    margin-top: 50px;
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    font-weight: 200;
+    text-align: center;
+    clear: both;
+    margin-top: auto;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content .zf-templateWidth form h2 {
+    color: #00C979;
+    margin-top: 0;
+    font-weight: 800; /* Uso de Gilroy ExtraBold en h2 */
+    text-align: center;
+    font-size: 32px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 800;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button.custom-btn::before {
+    content: 'Enviar';
+    display: block;
+    position: relative;
+    top: 2px;
+}
+
+button {
+    background-color: #00C979;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #003122;
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .content .zf-templateWidth form h2 {
+        font-size: 28px;
+    }
+
+    label {
+        font-weight: 800;
+    }
+
+    input,
+    textarea {
+        padding: 8px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
