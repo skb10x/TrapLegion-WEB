@@ -1,126 +1,306 @@
-/* Importación de la tipografía Gilroy */
+/* Importar la tipografía Gilroy */
 @font-face {
     font-family: 'Gilroy';
     src: url('https://cdn.jsdelivr.net/gh/skb10x/Gilroy-SATV@main/Gilroy.css') format('css');
 }
 
 /* Estilos generales */
-
 body {
-    font-family: 'Gilroy Regular', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Color de fondo general */
-    color: #333; /* Color de texto general */
-    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #000;
+    font-family: 'Gilroy', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Encabezado (Header) */
-
 header {
-    background-color: #003122; /* Color de fondo del header */
-    color: white; /* Color de texto del header */
-    text-align: center;
-    padding: 16px 0; /* 1rem = 16px */
-    border-bottom: 4px solid #00e992; /* Borde inferior */
+    background-color: #00C979;
+    color: #fff;
+    padding: 20px 0;
 }
 
 header h1 {
-    font-size: 40px; /* 2.5rem = 40px */
-    margin-bottom: 8px; /* 0.5rem = 8px */
+    font-size: 36px;
+    margin: 0;
 }
-
-/* Navegación (Nav) */
 
 nav {
-    background-color: #003122; /* Color de fondo de la navegación */
-    color: white; /* Color de texto de la navegación */
-    text-align: center;
-    padding: 8px 0; /* 0.5rem = 8px */
-}
-
-nav ul {
-    list-style-type: none; /* Quita los puntos de la lista */
-    padding: 0;
-}
-
-nav li {
-    display: inline; /* Alinear los elementos de la lista en línea */
-    margin: 0 15px; /* Espaciado entre elementos */
+    background-color: #018A54;
+    color: #fff;
+    padding: 10px 0;
 }
 
 nav a {
-    color: white; /* Color de los enlaces */
+    margin: 0 15px;
+    color: #fff;
     text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Transición de color al hacer hover */
+    font-size: 18px;
+}
+
+nav a.active {
+    color: #003122;
 }
 
 nav a:hover {
-    background-color: #00e992; /* Color de fondo de los enlaces al hacer hover */
+    color: #003122;
 }
 
-/* Contenido principal (Main) */
-
-main {
-    padding: 32px; /* 2rem = 32px */
-}
-
-/* Sección de introducción */
-
-.intro {
-    text-align: center;
-    margin-bottom: 32px; /* 2rem = 32px */
-}
-
-.intro h2 {
-    font-size: 32px; /* 2rem = 32px */
-    margin-bottom: 16px; /* 1rem = 16px */
-}
-
-/* Botones */
-
-.custom-btn {
-    background-color: #003122; /* Color de fondo de los botones */
-    color: white; /* Color de texto de los botones */
+iframe {
+    flex: 1;
+    width: 100%;
     border: none;
-    padding: 16px 32px; /* 1rem = 16px */
-    cursor: pointer;
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Transición de color al hacer hover */
+    margin-top: 50px;
 }
 
-.custom-btn:hover {
-    background-color: #00e992; /* Color de fondo de los botones al hacer hover */
+.content {
+    flex: 1;
 }
-
-/* Pie de página (Footer) */
 
 footer {
-    background-color: #003122; /* Color de fondo del footer */
-    color: white; /* Color de texto del footer */
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    font-weight: 200;
     text-align: center;
-    padding: 16px 0; /* 1rem = 16px */
-    border-top: 4px solid #00e992; /* Borde superior */
+    clear: both;
+    margin-top: auto;
 }
 
-/* Estilos específicos para la página de servicios */
-
-.services {
-    background-color: #fff; /* Color de fondo de la sección de servicios */
-    padding: 32px; /* 2rem = 32px */
-    margin-top: 32px; /* 2rem = 32px */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.services h3 {
-    font-size: 29px; /* 1.8rem = 29px */
-    margin-bottom: 16px; /* 1rem = 16px */
+.content .zf-templateWidth form h2 {
+    color: #00C979;
+    margin-top: 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
 }
 
-.services p {
-    font-size: 19px; /* 1.2rem = 19px */
-    margin-bottom: 16px; /* 1rem = 16px */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button.custom-btn::before {
+    content: 'Enviar';
+    display: block;
+    position: relative;
+    top: 2px;
+}
+
+button {
+    background-color: #00C979;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Gilroy", sans-serif;
+    display: block;
+    margin: 10px auto 0;
+    font-style: normal;
+    line-height: 1;
+}
+
+button:hover {
+    background-color: #003122;
+}
+
+em {
+    color: #00C979;
+    font-style: normal;
+}
+
+/* Sección 1 */
+.social-links img {
+    width: 40px;
+    height: 30px;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.latest-releases {
+    margin-top: 50px;
+}
+
+.latest-releases h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.release-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.release-item {
+    margin: 15px;
+}
+
+.release-item iframe {
+    border-radius: 12px;
+}
+
+.release-item p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Sección 2 */
+.artist-section {
+    margin-top: 50px;
+}
+
+.artist-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.artist-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.artist-item {
+    margin: 15px;
+}
+
+.artist-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.artist-item p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Sección 3 */
+.about-section {
+    transform: scale(0.8);
+    transform-origin: center;
+    position: relative;
+    display: inline-block;
+    padding-left: 700px;
+    padding-right: 700px;
+}
+
+.about-section .text-box {
+    margin: -350px 0;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0.5px 2px 2px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.about-section h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 700px;
+    margin-right: 700px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-section .textbox a {
+    font-family: "Gilroy", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #00C979;
+    font-weight: 900;
+}
+
+.about-section .textbox a:hover {
+    color: #003122;
+    text-decoration: none;
+}
+
+.textbox {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 25px;
+    transform: scale(1.4);
+    transform-origin: center;
+}
+
+.textbox h2,
+.textbox p,
+.textbox a {
+    margin: 0;
+}
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .about-section .text-box {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .about-section p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .textbox {
+        transform: scale(1); /* Reducir el efecto de zoom en móviles */
+        padding: 15px;
+    }
+
+    .about-section {
+        padding-left: 20px;
+        padding-right: 20px;
+        transform: scale(1);
+    }
 }
