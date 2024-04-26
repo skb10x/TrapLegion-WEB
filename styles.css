@@ -214,8 +214,10 @@ em {
 }
 
 .artist-section iframe {
-    width: 100%; /* Cambiar el ancho del iframe según sea necesario */
-    max-width: 400px; /* Establecer un ancho máximo si es necesario */
+    width: 100%;
+    max-width: 300px; /* Ajusta este valor según tu preferencia */
+    height: 352px; /* Mantén la misma altura */
+    border: none; /* Elimina el borde */
 }
 
 /* Sección 3 */
@@ -267,15 +269,22 @@ em {
 }
 
 .textbox {
+    position: relative;
     padding: 20px;
     background-color: #ffffff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Ajustar el box-shadow */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-top: 25px;
-    transform: scale(1.4);
-    transform-origin: center;
-    max-height: 80vh; /* Establecer una altura máxima */
-    overflow-y: auto; /* Permitir el desplazamiento vertical */
+    width: 80%; /* Anchura ajustable */
+}
+
+.about-section {
+    position: relative;
+    margin-bottom: 40px; /* Agregar espacio entre secciones */
+}
+
+.about-section:last-child {
+    margin-bottom: 0; /* No agregar espacio después de la última sección */
 }
 
 .textbox h2,
