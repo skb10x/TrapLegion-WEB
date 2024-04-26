@@ -213,6 +213,11 @@ em {
     margin-top: 10px;
 }
 
+.artist-section iframe {
+    width: 100%; /* Cambiar el ancho del iframe según sea necesario */
+    max-width: 400px; /* Establecer un ancho máximo si es necesario */
+}
+
 /* Sección 3 */
 .about-section {
     transform: scale(0.8);
@@ -264,11 +269,13 @@ em {
 .textbox {
     padding: 20px;
     background-color: #ffffff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Ajustar el box-shadow */
     border-radius: 8px;
     margin-top: 25px;
     transform: scale(1.4);
     transform-origin: center;
+    max-height: 80vh; /* Establecer una altura máxima */
+    overflow-y: auto; /* Permitir el desplazamiento vertical */
 }
 
 .textbox h2,
