@@ -927,3 +927,99 @@
 .textbox a {
     margin: 0;
 }
+
+/* Fuente personalizada */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('https://cdn.jsdelivr.net/gh/skb10x/Gilroy-SATV@main/Gilroy.css') format('css');
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #000;
+    font-family: 'Gilroy', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #00C979;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+nav {
+    background-color: #018A54;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a.active {
+    color: #003122;
+}
+
+nav a:hover {
+    color: #003122;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    font-weight: 200;
+    text-align: center;
+    clear: both;
+    margin-top: auto;
+    position: sticky;
+    bottom: 0;
+}
+
+/* Corrección de la textbox en knowus.html */
+.about-section .textbox {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0.5px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los textos que no son enlaces */
+.about-section p,
+.textbox p {
+    color: #000;
+}
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    /* Ajustes para dispositivos móviles */
+    .about-section .textbox {
+        margin: 20px;
+        padding: 15px;
+    }
+    .about-section p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Estilos específicos para diferentes secciones */
+
+/* ... */
