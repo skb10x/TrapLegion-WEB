@@ -269,13 +269,13 @@ em {
 }
 
 .textbox {
-    position: relative;
-    padding: 20px;
+    padding: 10px;
     background-color: #ffffff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-top: 25px;
-    width: 80%; /* Anchura ajustable */
+    width: 80%; /* Reducimos el ancho de la caja de texto */
+    font-size: 18px; /* Aumentamos el tamaño de la tipografía dentro de la caja de texto */
 }
 
 .about-section {
