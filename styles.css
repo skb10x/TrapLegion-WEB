@@ -52,20 +52,6 @@
             margin-top: 50px;
         }
 
-        .content {
-            flex: 1;
-        }
-
-        footer {
-            background-color: #222;
-            color: #fff;
-            padding: 20px 0;
-            font-weight: 200;
-            text-align: center;
-            clear: both;
-            margin-top: auto;
-        }
-
         form {
             max-width: 600px;
             margin: 20px auto;
@@ -184,16 +170,6 @@
         nav a:hover {
             color: #003122;
         }
-		
-        footer {
-            background-color: #222;
-            color: #fff;
-            padding: 20px 0;
-            font-weight: 200;
-            text-align: center;
-            clear: both;
-			margin-top: auto;
-        }
 
         .social-links img {
             width: 40px;
@@ -232,6 +208,8 @@
         }
 
         .release-item p {
+			font-style: 900;
+			font-family: 'Gilroy', sans-serif;
             font-size: 18px;
             margin-top: 10px;
         }
@@ -244,8 +222,9 @@
         }
 
         .artist-section h2 {
+            margin-top: 20px;
             font-size: 28px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .artist-list {
@@ -258,27 +237,28 @@
             flex-wrap: wrap;
         }
 
-        .artist-item {
+        .artist-section {
             margin: 15px;
         }
 
-        .artist-item img {
+        .artist-section img {
             width: 150px;
             height: 150px;
             object-fit: cover;
-        }
+            margin-bottom: 8px;
+		}
 
-        .artist-item p {
+        .artist-section p {
             font-size: 18px;
-            margin-top: 10px;
+            margin-top: 20px;
         }
 
         /* Aplicando el estilo del iframe para el artista */
-        .artist-item iframe {
-            width: 250px; /* Ancho cuadrado */
-            height: 250px; /* Alto cuadrado */
-            max-width: 100%;
+        .artist-section iframe {
+            width: 300px; /* Ancho cuadrado */
+            height: 352px; /* Alto cuadrado */
             max-height: 100%;
+			margin-top: 8px;
             frameborder: 0;
             allowfullscreen: true;
             allow: autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture;
@@ -292,18 +272,6 @@
 
 		.content {
 			flex: 1;
-		}
-		
-		footer {
-			background-color: #222;
-			color: #fff;
-			padding: 20px 0;
-			font-weight: 200;
-			text-align: center;
-			clear: both;
-			margin-top: auto;
-			position: relative;
-			bottom: 0;
 		}
 
 		div h2 {
@@ -354,13 +322,6 @@
             color: #003122;
         }
 
-        footer {
-            background-color: #222;
-            color: #fff;
-            padding: 20px 0;
-            width: 100%;
-        }
-
         .latest-releases {
             margin-top: 50px;
         }
@@ -391,11 +352,13 @@
         .release-item p {
             font-size: 18px;
             margin-top: 10px;
+			font-style: 900;
+			font-family: 'Gilroy', sans-serif;
         }
 
         .about-section .text-box {
             margin: -350px 0;
-            border: 1px solid #ddd;
+          
             border-radius: 20px;
             box-shadow: 0.5px 2px 2px rgba(0, 0, 0, 0.1);
             display: inline-block;
@@ -438,16 +401,6 @@
             display: inline-block;
             padding-left: 700px;
             padding-right: 700px;
-        }
-
-        .textbox {
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin-top: 25px;
-            transform: scale(1.4);
-            transform-origin: center;
         }
 
         .textbox h2,
@@ -500,9 +453,7 @@
         .content {
             flex: 1;
         }
-    </style>
-	
-	    <style>
+
         body {
             margin: 0;
             padding: 0;
@@ -547,27 +498,16 @@
             color: #003122;
         }
 
-        footer {
-            background-color: #222;
-            color: #fff;
-            padding: 20px 0;
-            font-weight: 200;
-            text-align: center;
-            clear: both;
-            margin-top: auto;
-        }
-
         .content {
             padding: 20px;
         }
-
+		
         .about-section {
             max-width: 800px;
             margin: 0 auto;
             padding: 30px;
-            border: 1px solid #ddd;
             border-radius: 5px;
-            box-shadow: 0.5px 2px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0.5px 2px 2px rgb(0 0 0 / 0%);
             background-color: #ffffff;
             transform: scale(1);
             transform-origin: center;
@@ -583,6 +523,7 @@
 
         .about-section p {
             text-align: justify;
+			font-family: 'Gilroy', sans-serif;
             font-size: 18px;
             line-height: -5;
             margin-bottom: 15px;
@@ -643,14 +584,6 @@
             color: #003122;
         }
 
-        footer {
-            background-color: #222;
-            color: #fff;
-            padding: 20px 0;
-            width: 100%;
-            z-index: 100; /* Asegura que el footer esté sobre el contenido */
-        }
-
         .latest-releases {
             margin-top: 50px;
             flex: 1;
@@ -680,6 +613,8 @@
         }
 
         .release-item p {
+			font-style: 900;
+			font-family: 'Gilroy', sans-serif;
             font-size: 18px;
             margin-top: 10px;
         }
@@ -743,8 +678,7 @@
         form button {
             display: block;
             margin: 10px 0;
-            width: 80%;
-            max-width: 400px;
+            width: 600px;
             padding: 10px;
             border-radius: 5px;
             border: 1px solid #ddd;
@@ -761,15 +695,6 @@
             background-color: #00C979;
         }
 
-        footer {
-            background-color: #222;
-            color: #fff;
-            padding: 20px 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-
         .social-links img {
             margin: 0 10px;
             width: 30px;
@@ -777,7 +702,7 @@
         }   
 		    
 		p {
-		    color: #00C979;
+		    color: #000;
 			font-style: 900;
 			}
 
@@ -791,6 +716,7 @@
 			display: flex;
 			flex-direction: column;
 			min-height: 100vh;
+			line-height: 1.2;
         }
 
         header {
@@ -825,16 +751,6 @@
             color: #003122;
         }
 
-        footer {
-            background-color: #222;
-            color: #fff;
-            padding: 20px 0;
-            font-weight: 200;
-            text-align: center;
-            clear: both;
-			margin-top: auto;
-        }
-
         .latest-releases {
             margin-top: 50px;
         }
@@ -865,16 +781,20 @@
         .release-item p {
             font-size: 18px;
             margin-top: 10px;
+			font-style: 900;
+			font-family: 'Gilroy', sans-serif;
         }
 
-.about-section .textbox {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 30px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0.5px 2px 2px rgba(0, 0, 0, 0.1);
-}
+        .about-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 2px rgb(0 0 0 / 78%);
+            background-color: #ffffff;
+            transform: scale(1);
+            transform-origin: center;
+        }
 
 .about-section h2,
 .about-section h3 {
@@ -893,11 +813,15 @@
 }
 
 .about-section p {
-    text-align: justify;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
+            max-width: 800px;
+            margin: 0 auto;
+			padding: 8px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 2px rgb(0 0 0 / 0%);
+            background-color: #ffffff;
+            transform: scale(1);
+            transform-origin: center;
+        }
 
 .about-section a {
     font-family: "Gilroy", sans-serif;
@@ -926,12 +850,6 @@
 .textbox p,
 .textbox a {
     margin: 0;
-}
-
-/* Fuente personalizada */
-@font-face {
-    font-family: 'Gilroy';
-    src: url('https://cdn.jsdelivr.net/gh/skb10x/Gilroy-SATV@main/Gilroy.css') format('css');
 }
 
 /* Estilos generales */
@@ -979,26 +897,22 @@ nav a:hover {
     color: #003122;
 }
 
-footer {
-    background-color: #222;
-    color: #fff;
-    padding: 20px 0;
-    font-weight: 200;
-    text-align: center;
-    clear: both;
-    margin-top: auto;
-    position: sticky;
-    bottom: 0;
-}
-
 /* Corrección de la textbox en knowus.html */
 .about-section .textbox {
     max-width: 800px;
     margin: 20px auto;
     padding: 30px;
-    border: 1px solid #ddd;
+	margin-top: -20px;
     border-radius: 5px;
-    box-shadow: 0.5px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 2px rgb(0 0 0 / 0%);
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgb(0 0 0 / 78%);
 }
 
 /* Estilo para los textos que no son enlaces */
@@ -1020,6 +934,27 @@ footer {
     }
 }
 
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    font-weight: 200;
+    text-align: center;
+    clear: both;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+}
+
+.aboutsection {
+    display: flex;
+    flex-direction: column;
+}
+
+div p {
+	font-family: 'Gilroy', sans-serif;
+	font-style: 200;
+}
 /* Estilos específicos para diferentes secciones */
 
 /* ... */
