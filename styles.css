@@ -388,6 +388,14 @@
             color: #00C979;
             font-weight: 900;
         }
+		
+		.about-section a {
+            color: #00C979;
+		}
+		
+		.about-section a:hover {
+            color: #003122;
+		}		
 
         .about-section .textbox a:hover {
             color: #003122;
@@ -827,7 +835,7 @@
     font-family: "Gilroy", sans-serif;
     font-size: 18px;
     text-decoration: none;
-    color: inherit;
+    color: #00C979;
 }
 
 .about-section a:hover {
@@ -946,7 +954,7 @@ footer {
     bottom: 0;
 }
 
-.aboutsection {
+.about-section {
     display: flex;
     flex-direction: column;
 }
