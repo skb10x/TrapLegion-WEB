@@ -539,6 +539,7 @@
 
         .about-section a {
             font-family: "Gilroy", sans-serif;
+			font-style: 600;
             font-size: 18px;
             text-decoration: none;
             color: #00C979;
