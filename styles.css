@@ -954,12 +954,12 @@ div p {
     @media only screen and (max-width: 320px) {
         /* Ajustes para dispositivos móviles con ancho máximo de 320px */
         .about-section .textbox {
-            margin: 5vw;
-            padding: 2vw;
+            margin: 10px;
+            padding: 5px;
+            width: calc(100% - 20px);
         }
         .about-section p {
-            margin-left: 5vw;
-            margin-right: 5vw;
+            margin: 10px;
         }
         body {
             padding: 0;
@@ -970,12 +970,12 @@ div p {
     @media only screen and (min-width: 321px) and (max-width: 480px) {
         /* Ajustes para dispositivos móviles con ancho entre 321px y 480px */
         .about-section .textbox {
-            margin: 5vw;
-            padding: 2vw;
+            margin: 15px;
+            padding: 10px;
+            width: calc(100% - 30px);
         }
         .about-section p {
-            margin-left: 5vw;
-            margin-right: 5vw;
+            margin: 15px;
         }
         body {
             padding: 0;
@@ -986,12 +986,12 @@ div p {
     @media only screen and (min-width: 481px) and (max-width: 720px) {
         /* Ajustes para dispositivos móviles con ancho entre 481px y 720px */
         .about-section .textbox {
-            margin: 5vw;
-            padding: 2vw;
+            margin: 20px;
+            padding: 15px;
+            width: calc(100% - 40px);
         }
         .about-section p {
-            margin-left: 5vw;
-            margin-right: 2vw;
+            margin: 20px 20px 20px 20px;
         }
         body {
             padding: 0;
@@ -1002,12 +1002,12 @@ div p {
     @media only screen and (device-width: 720px) and (device-height: 1640px) {
         /* Ajustes específicos para el TCL 20 SE T671E */
         .about-section .textbox {
-            margin: 5vw;
-            padding: 2vw;
+            margin: 20px;
+            padding: 15px;
+            width: calc(100% - 40px);
         }
         .about-section p {
-            margin-left: 5vw;
-            margin-right: 2vw;
+            margin: 20px 20px 20px 20px;
         }
         body {
             padding: 0;
@@ -1018,12 +1018,12 @@ div p {
     @media only screen and (min-width: 721px) and (max-width: 1080px) {
         /* Ajustes para dispositivos móviles con ancho entre 721px y 1080px */
         .about-section .textbox {
-            margin: 3vw;
-            padding: 2vw;
+            margin: 30px;
+            padding: 20px;
+            width: calc(100% - 60px);
         }
         .about-section p {
-            margin-left: 3vw;
-            margin-right: 3vw;
+            margin: 30px;
         }
         body {
             padding: 0;
@@ -1034,12 +1034,12 @@ div p {
     @media only screen and (min-width: 1081px) and (max-width: 1440px) {
         /* Ajustes para dispositivos móviles con ancho entre 1081px y 1440px */
         .about-section .textbox {
-            margin: 2vw;
-            padding: 2vw;
+            margin: 40px;
+            padding: 30px;
+            width: calc(100% - 80px);
         }
         .about-section p {
-            margin-left: 2vw;
-            margin-right: 2vw;
+            margin: 40px;
         }
         body {
             padding: 0;
@@ -1050,12 +1050,12 @@ div p {
     @media only screen and (min-width: 1441px) and (max-width: 1920px) {
         /* Ajustes para iPads y dispositivos de pantalla grande */
         .about-section .textbox {
-            margin: 2vw;
-            padding: 2vw;
+            margin: 40px;
+            padding: 30px;
+            width: calc(100% - 80px);
         }
         .about-section p {
-            margin-left: 2vw;
-            margin-right: 2vw;
+            margin: 40px;
         }
         body {
             padding: 0;
@@ -1066,12 +1066,12 @@ div p {
     @media only screen and (min-width: 1921px) and (max-width: 2560px) {
         /* Ajustes para dispositivos con una resolución de hasta 2K */
         .about-section .textbox {
-            margin: 2vw;
-            padding: 2vw;
+            margin: 40px;
+            padding: 30px;
+            width: calc(100% - 80px);
         }
         .about-section p {
-            margin-left: 2vw;
-            margin-right: 2vw;
+            margin: 40px;
         }
         body {
             padding: 0;
@@ -1082,12 +1082,12 @@ div p {
     @media only screen and (min-width: 2561px) and (max-width: 3840px) {
         /* Ajustes para dispositivos con una resolución de hasta 4K */
         .about-section .textbox {
-            margin: 2vw;
-            padding: 2vw;
+            margin: 40px;
+            padding: 30px;
+            width: calc(100% - 80px);
         }
         .about-section p {
-            margin-left: 2vw;
-            margin-right: 2vw;
+            margin: 40px;
         }
         body {
             padding: 0;
@@ -1098,12 +1098,12 @@ div p {
     @media only screen and (min-width: 3841px) and (max-width: 7680px) {
         /* Ajustes para dispositivos con una resolución de hasta 8K */
         .about-section .textbox {
-            margin: 2vw;
-            padding: 2vw;
+            margin: 40px;
+            padding: 30px;
+            width: calc(100% - 80px);
         }
         .about-section p {
-            margin-left: 2vw;
-            margin-right: 2vw;
+            margin: 40px;
         }
         body {
             padding: 0;
@@ -1114,27 +1114,12 @@ div p {
     @media only screen and (min-width: 7681px) and (max-width: 11520px) {
         /* Ajustes para dispositivos con una resolución de hasta 12K */
         .about-section .textbox {
-            margin: 2vw;
-            padding: 2vw;
+            margin: 40px;
+            padding: 30px;
+            width: calc(100% - 80px);
         }
         .about-section p {
-            margin-left: 2vw;
-            margin-right: 2vw;
-        }
-        body {
-            padding: 0;
-        }
-    }
-
-    /* Ajustes para dispositivos móviles con un ancho máximo de 768px */
-    @media only screen and (max-width: 768px) {
-        .about-section .textbox {
-            margin: 5vw;
-            padding: 2vw;
-        }
-        .about-section p {
-            margin-left: 5vw;
-            margin-right: 5vw;
+            margin: 40px;
         }
         body {
             padding: 0;
