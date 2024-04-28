@@ -358,9 +358,7 @@
 
         .about-section .text-box {
             margin: -350px 0;
-          
             border-radius: 20px;
-            box-shadow: 0.5px 2px 2px rgba(0, 0, 0, 0.1);
             display: inline-block;
             margin-top: 20px;
         }
@@ -510,7 +508,6 @@
             margin: 0 auto;
             padding: 30px;
             border-radius: 5px;
-            box-shadow: 0.5px 2px 2px rgb(0 0 0 / 0%);
             background-color: #ffffff;
             transform: scale(1);
             transform-origin: center;
@@ -794,7 +791,6 @@
             margin: 0 auto;
             padding: 30px;
             border-radius: 5px;
-            box-shadow: 0px 0px 2px rgb(0 0 0 / 78%);
             background-color: #ffffff;
             transform: scale(1);
             transform-origin: center;
@@ -907,17 +903,18 @@ nav a:hover {
     max-width: 800px;
     margin: 20px auto;
     padding: 30px;
-	margin-top: -20px;
+	margin-top: -30px;
+	margin-bottom: -30px;
     border-radius: 5px;
-    box-shadow: 0px 0px 2px rgb(0 0 0 / 0%);
+    box-shadow: 0px 0px 2px rgb(0 0 0 / 78%);
 }
 
 .about-section {
     max-width: 800px;
     margin: 20px auto;
     padding: 30px;
+    border: 1px solid #ddd0;
     border-radius: 5px;
-    box-shadow: 0px 0px 2px rgb(0 0 0 / 78%);
 }
 
 /* Estilo para los textos que no son enlaces */
@@ -950,12 +947,11 @@ div p {
 
 /* Media queries para diferentes tamaños de pantalla */
 @media only screen {
-    /* Para dispositivos con un ancho máximo de 320px (por ejemplo, iPhone SE) */
-    @media only screen and (max-width: 320px) {
-        /* Ajustes para dispositivos móviles con ancho máximo de 320px */
+    /* Para dispositivos con un ancho máximo de 320px */
+    @media only screen and (max-device-width: 320px) {
         .about-section .textbox {
             margin: 10px;
-            padding: 5px;
+            padding: 10px;
             width: calc(100% - 20px);
         }
         .about-section p {
@@ -966,12 +962,11 @@ div p {
         }
     }
 
-    /* Para dispositivos con un ancho mínimo de 321px y un máximo de 480px (por ejemplo, iPhone 6/7/8) */
-    @media only screen and (min-width: 321px) and (max-width: 480px) {
-        /* Ajustes para dispositivos móviles con ancho entre 321px y 480px */
+    /* Para dispositivos con un ancho mínimo de 321px y un máximo de 480px */
+    @media only screen and (min-width: 321px) and (max-device-width: 480px) {
         .about-section .textbox {
             margin: 15px;
-            padding: 10px;
+            padding: 15px;
             width: calc(100% - 30px);
         }
         .about-section p {
@@ -982,16 +977,15 @@ div p {
         }
     }
 
-    /* Para dispositivos con un ancho mínimo de 481px y un máximo de 720px (por ejemplo, iPhone 6/7/8 Plus) */
-    @media only screen and (min-width: 481px) and (max-width: 720px) {
-        /* Ajustes para dispositivos móviles con ancho entre 481px y 720px */
+    /* Para dispositivos con un ancho mínimo de 481px y un máximo de 720px */
+    @media only screen and (min-width: 481px) and (max-device-width: 720px) {
         .about-section .textbox {
             margin: 20px;
-            padding: 15px;
+            padding: 20px;
             width: calc(100% - 40px);
         }
         .about-section p {
-            margin: 20px 20px 20px 20px;
+            margin: 20px;
         }
         body {
             padding: 0;
@@ -1000,23 +994,21 @@ div p {
 
     /* Para dispositivos TCL 20 SE T671E con una resolución de 720x1640 */
     @media only screen and (device-width: 720px) and (device-height: 1640px) {
-        /* Ajustes específicos para el TCL 20 SE T671E */
         .about-section .textbox {
             margin: 20px;
-            padding: 15px;
+            padding: 20px;
             width: calc(100% - 40px);
         }
         .about-section p {
-            margin: 20px 20px 20px 20px;
+            margin: 20px;
         }
         body {
             padding: 0;
         }
     }
 
-    /* Para dispositivos con un ancho mínimo de 721px y un máximo de 1080px (por ejemplo, Samsung Galaxy S9/S10) */
-    @media only screen and (min-width: 721px) and (max-width: 1080px) {
-        /* Ajustes para dispositivos móviles con ancho entre 721px y 1080px */
+    /* Para dispositivos con un ancho mínimo de 721px y un máximo de 1080px */
+    @media only screen and (min-width: 721px) and (max-device-width: 1080px) {
         .about-section .textbox {
             margin: 30px;
             padding: 20px;
@@ -1024,102 +1016,6 @@ div p {
         }
         .about-section p {
             margin: 30px;
-        }
-        body {
-            padding: 0;
-        }
-    }
-
-    /* Para dispositivos con un ancho mínimo de 1081px y un máximo de 1440px (por ejemplo, iPhone 12 Pro Max) */
-    @media only screen and (min-width: 1081px) and (max-width: 1440px) {
-        /* Ajustes para dispositivos móviles con ancho entre 1081px y 1440px */
-        .about-section .textbox {
-            margin: 40px;
-            padding: 30px;
-            width: calc(100% - 80px);
-        }
-        .about-section p {
-            margin: 40px;
-        }
-        body {
-            padding: 0;
-        }
-    }
-
-    /* Para dispositivos con un ancho mínimo de 1441px y un máximo de 1920px (por ejemplo, iPads y otros dispositivos de pantalla grande) */
-    @media only screen and (min-width: 1441px) and (max-width: 1920px) {
-        /* Ajustes para iPads y dispositivos de pantalla grande */
-        .about-section .textbox {
-            margin: 40px;
-            padding: 30px;
-            width: calc(100% - 80px);
-        }
-        .about-section p {
-            margin: 40px;
-        }
-        body {
-            padding: 0;
-        }
-    }
-
-    /* Para dispositivos con un ancho mínimo de 1921px y un máximo de 2560px */
-    @media only screen and (min-width: 1921px) and (max-width: 2560px) {
-        /* Ajustes para dispositivos con una resolución de hasta 2K */
-        .about-section .textbox {
-            margin: 40px;
-            padding: 30px;
-            width: calc(100% - 80px);
-        }
-        .about-section p {
-            margin: 40px;
-        }
-        body {
-            padding: 0;
-        }
-    }
-
-    /* Para dispositivos con un ancho mínimo de 2561px y un máximo de 3840px */
-    @media only screen and (min-width: 2561px) and (max-width: 3840px) {
-        /* Ajustes para dispositivos con una resolución de hasta 4K */
-        .about-section .textbox {
-            margin: 40px;
-            padding: 30px;
-            width: calc(100% - 80px);
-        }
-        .about-section p {
-            margin: 40px;
-        }
-        body {
-            padding: 0;
-        }
-    }
-
-    /* Para dispositivos con un ancho mínimo de 3841px y un máximo de 7680px */
-    @media only screen and (min-width: 3841px) and (max-width: 7680px) {
-        /* Ajustes para dispositivos con una resolución de hasta 8K */
-        .about-section .textbox {
-            margin: 40px;
-            padding: 30px;
-            width: calc(100% - 80px);
-        }
-        .about-section p {
-            margin: 40px;
-        }
-        body {
-            padding: 0;
-        }
-    }
-
-    /* Para dispositivos con un ancho mínimo de 7681px y un máximo de 11520px */
-    @media only screen and (min-width: 7681px) and (max-width: 11520px) {
-        /* Ajustes para dispositivos con una resolución de hasta 12K */
-        .about-section .textbox {
-            margin: 40px;
-            padding: 30px;
-            width: calc(100% - 80px);
-        }
-        .about-section p {
-            margin: 40px;
         }
         body {
             padding: 0;
