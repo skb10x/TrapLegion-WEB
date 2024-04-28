@@ -947,18 +947,19 @@ div p {
 	font-family: 'Gilroy', sans-serif;
 	font-style: 200;
 }
+
 /* Media queries para diferentes tamaños de pantalla */
 @media only screen {
     /* Para dispositivos con un ancho máximo de 320px (por ejemplo, iPhone SE) */
     @media only screen and (max-width: 320px) {
-        /* Aquí van tus ajustes para dispositivos móviles con ancho máximo de 320px */
+        /* Ajustes para dispositivos móviles con ancho máximo de 320px */
         .about-section .textbox {
-            margin: 20px;
-            padding: 15px;
+            margin: 5vw;
+            padding: 2vw;
         }
         .about-section p {
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 5vw;
+            margin-right: 5vw;
         }
         body {
             padding: 0;
@@ -967,30 +968,30 @@ div p {
 
     /* Para dispositivos con un ancho mínimo de 321px y un máximo de 480px (por ejemplo, iPhone 6/7/8) */
     @media only screen and (min-width: 321px) and (max-width: 480px) {
-        /* Aquí van tus ajustes para dispositivos móviles con ancho entre 321px y 480px */
+        /* Ajustes para dispositivos móviles con ancho entre 321px y 480px */
         .about-section .textbox {
-            margin: 20px;
-            padding: 15px;
+            margin: 5vw;
+            padding: 2vw;
         }
         .about-section p {
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 5vw;
+            margin-right: 5vw;
         }
         body {
             padding: 0;
         }
-	}
+    }
 
     /* Para dispositivos con un ancho mínimo de 481px y un máximo de 720px (por ejemplo, iPhone 6/7/8 Plus) */
     @media only screen and (min-width: 481px) and (max-width: 720px) {
-        /* Aquí van tus ajustes para dispositivos móviles con ancho entre 481px y 720px */
+        /* Ajustes para dispositivos móviles con ancho entre 481px y 720px */
         .about-section .textbox {
-            margin: 20px;
-            padding: 15px;
+            margin: 5vw;
+            padding: 2vw;
         }
         .about-section p {
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 5vw;
+            margin-right: 2vw;
         }
         body {
             padding: 0;
@@ -999,14 +1000,14 @@ div p {
 
     /* Para dispositivos TCL 20 SE T671E con una resolución de 720x1640 */
     @media only screen and (device-width: 720px) and (device-height: 1640px) {
-        /* Aquí van tus ajustes específicos para el TCL 20 SE T671E */
+        /* Ajustes específicos para el TCL 20 SE T671E */
         .about-section .textbox {
-            margin: 20px;
-            padding: 15px;
+            margin: 5vw;
+            padding: 2vw;
         }
         .about-section p {
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 5vw;
+            margin-right: 2vw;
         }
         body {
             padding: 0;
@@ -1015,14 +1016,14 @@ div p {
 
     /* Para dispositivos con un ancho mínimo de 721px y un máximo de 1080px (por ejemplo, Samsung Galaxy S9/S10) */
     @media only screen and (min-width: 721px) and (max-width: 1080px) {
-        /* Aquí van tus ajustes para dispositivos móviles con ancho entre 721px y 1080px */
+        /* Ajustes para dispositivos móviles con ancho entre 721px y 1080px */
         .about-section .textbox {
-            margin: 20px;
-            padding: 15px;
+            margin: 3vw;
+            padding: 2vw;
         }
         .about-section p {
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 3vw;
+            margin-right: 3vw;
         }
         body {
             padding: 0;
@@ -1031,14 +1032,14 @@ div p {
 
     /* Para dispositivos con un ancho mínimo de 1081px y un máximo de 1440px (por ejemplo, iPhone 12 Pro Max) */
     @media only screen and (min-width: 1081px) and (max-width: 1440px) {
-        /* Aquí van tus ajustes para dispositivos móviles con ancho entre 1081px y 1440px */
+        /* Ajustes para dispositivos móviles con ancho entre 1081px y 1440px */
         .about-section .textbox {
-            margin: 20px;
-            padding: 15px;
+            margin: 2vw;
+            padding: 2vw;
         }
         .about-section p {
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 2vw;
+            margin-right: 2vw;
         }
         body {
             padding: 0;
@@ -1047,14 +1048,14 @@ div p {
 
     /* Para dispositivos con un ancho mínimo de 1441px y un máximo de 1920px (por ejemplo, iPads y otros dispositivos de pantalla grande) */
     @media only screen and (min-width: 1441px) and (max-width: 1920px) {
-        /* Aquí van tus ajustes para iPads y dispositivos de pantalla grande */
+        /* Ajustes para iPads y dispositivos de pantalla grande */
         .about-section .textbox {
-            margin: 20px;
-            padding: 15px;
+            margin: 2vw;
+            padding: 2vw;
         }
         .about-section p {
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 2vw;
+            margin-right: 2vw;
         }
         body {
             padding: 0;
@@ -1063,14 +1064,14 @@ div p {
 
     /* Para dispositivos con un ancho mínimo de 1921px y un máximo de 2560px */
     @media only screen and (min-width: 1921px) and (max-width: 2560px) {
-        /* Aquí van tus ajustes para dispositivos con una resolución de hasta 2K */
+        /* Ajustes para dispositivos con una resolución de hasta 2K */
         .about-section .textbox {
-            margin: 20px;
-            padding: 15px;
+            margin: 2vw;
+            padding: 2vw;
         }
         .about-section p {
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 2vw;
+            margin-right: 2vw;
         }
         body {
             padding: 0;
@@ -1079,14 +1080,14 @@ div p {
 
     /* Para dispositivos con un ancho mínimo de 2561px y un máximo de 3840px */
     @media only screen and (min-width: 2561px) and (max-width: 3840px) {
-        /* Aquí van tus ajustes para dispositivos con una resolución de hasta 4K */
+        /* Ajustes para dispositivos con una resolución de hasta 4K */
         .about-section .textbox {
-            margin: 20px;
-            padding: 15px;
+            margin: 2vw;
+            padding: 2vw;
         }
         .about-section p {
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 2vw;
+            margin-right: 2vw;
         }
         body {
             padding: 0;
@@ -1095,14 +1096,14 @@ div p {
 
     /* Para dispositivos con un ancho mínimo de 3841px y un máximo de 7680px */
     @media only screen and (min-width: 3841px) and (max-width: 7680px) {
-        /* Aquí van tus ajustes para dispositivos con una resolución de hasta 8K */
+        /* Ajustes para dispositivos con una resolución de hasta 8K */
         .about-section .textbox {
-            margin: 20px;
-            padding: 15px;
+            margin: 2vw;
+            padding: 2vw;
         }
         .about-section p {
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 2vw;
+            margin-right: 2vw;
         }
         body {
             padding: 0;
@@ -1111,14 +1112,14 @@ div p {
 
     /* Para dispositivos con un ancho mínimo de 7681px y un máximo de 11520px */
     @media only screen and (min-width: 7681px) and (max-width: 11520px) {
-        /* Aquí van tus ajustes para dispositivos con una resolución de hasta 12K */
+        /* Ajustes para dispositivos con una resolución de hasta 12K */
         .about-section .textbox {
-            margin: 20px;
-            padding: 15px;
+            margin: 2vw;
+            padding: 2vw;
         }
         .about-section p {
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 2vw;
+            margin-right: 2vw;
         }
         body {
             padding: 0;
@@ -1128,12 +1129,12 @@ div p {
     /* Ajustes para dispositivos móviles con un ancho máximo de 768px */
     @media only screen and (max-width: 768px) {
         .about-section .textbox {
-            margin: 20px;
-            padding: 15px;
+            margin: 5vw;
+            padding: 2vw;
         }
         .about-section p {
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 5vw;
+            margin-right: 5vw;
         }
         body {
             padding: 0;
