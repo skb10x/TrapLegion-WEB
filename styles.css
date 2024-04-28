@@ -952,7 +952,6 @@ div p {
         .about-section .textbox {
             margin: 5px;
             padding: 5px;
-            width: calc(100% - 10px);
         }
         .about-section p {
             margin: 5px;
@@ -967,7 +966,6 @@ div p {
         .about-section .textbox {
             margin: 10px;
             padding: 10px;
-            width: calc(100% - 20px);
         }
         .about-section p {
             margin: 10px;
@@ -982,7 +980,6 @@ div p {
         .about-section .textbox {
             margin: 15px;
             padding: 15px;
-            width: calc(100% - 30px);
         }
         .about-section p {
             margin: 15px;
@@ -997,7 +994,6 @@ div p {
         .about-section .textbox {
             margin: 15px;
             padding: 15px;
-            width: calc(100% - 30px);
         }
         .about-section p {
             margin: 15px;
@@ -1010,12 +1006,11 @@ div p {
     /* Para dispositivos con un ancho mínimo de 721px y un máximo de 1080px */
     @media only screen and (min-width: 721px) and (max-width: 1080px) {
         .about-section .textbox {
-            margin: 20px;
-            padding: 15px;
-            width: calc(100% - 35px);
+            margin: 10px;
+            padding: 5px;
         }
         .about-section p {
-            margin: 20px;
+            margin: 10px;
         }
         body {
             padding: 0;
